@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try.css">
+    <title>Landing Page </title>
+</head>
+
+<body>
+    <header>
+        <h1>Intern Crowd</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active">Home</li>
+                <li>Courses</li>
+                <li>About Us</li>
+                <li>Services</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Web Development</p>
+            <p class="msg">Writing efficiently is an art. Start by using simple, everyday
+                words people can understand.Be clear and direct to point.Keep 
+                your thoughts flowing logically , and aim from brevity unless you're 
+                writing in long form.     </p>
+            <button class="cta">Read More</button>
+        </section>
+        <section class="right">
+            <img src="./images/img.svg" alt="image">
+        </section>
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
